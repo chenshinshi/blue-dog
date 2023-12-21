@@ -1,0 +1,14 @@
+/* ------------------------------------------------块嵌入/嵌入块------------------------------------------------- */
+.protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"] {
+    border: 1px solid var(--b3-border-color1);
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+
+/* 进行SQL查询时嵌入块之间分割线颜色 */
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed]>.protyle-wysiwyg__embed {
+    border-top: 2px solid var(--b3-theme-primary-light);
+}
+
+/* ------------------------------------------------块嵌入/嵌入块 END------------------------------------------------- */

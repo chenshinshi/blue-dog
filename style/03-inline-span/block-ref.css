@@ -1,0 +1,26 @@
+/* ------------------------------------------------块引用/引用块------------------------------------------------- */
+
+/* 设置引用块格式 */
+.protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
+    /* color: var(--b3-block-ref-color); */
+    /* 腾讯文档logo的配色 */
+    color: #2a65f5;
+    font-weight: inherit;
+}
+
+/* 为引用块后面增加引用图标 */
+.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
+    color: var(--b3-block-ref-before);
+    content: "[[";
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
+    color: var(--b3-block-ref-before);
+    content: "]]";
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]:hover {
+    background-color: var(--b3-block-ref-hover-background);
+}
+
+/* ------------------------------------------------块引用 END------------------------------------------------- */

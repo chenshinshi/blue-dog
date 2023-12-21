@@ -1,0 +1,18 @@
+/* ——————————————————————缩短无序列表底上下边距（blue-dog主题专属）———————————————————— */
+.protyle-wysiwyg [data-node-id].li>[data-node-id] {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+/* 列表前面的竖线颜色hover前后颜色一致 */
+.protyle-wysiwyg [data-node-id].li:before,
+.protyle-wysiwyg [data-node-id].li:hover:before {
+    border-left-color: #8080804d;
+}
+
+/* 折叠列表前面的·符号背景加上一个边框，使折叠更加突出 */
+/* 灵感来自Dark+主题和tana软件 */
+.protyle-wysiwyg [data-node-id].li[data-subtype="u"][fold="1"]>.protyle-action:after {
+    outline: 2px dashed rgb(180, 180, 180);
+}

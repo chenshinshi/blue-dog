@@ -1,0 +1,18 @@
+{
+  "name": "blue-dog",
+  "author": "UserZYF",
+  "url": "https://github.com/chenshinshi/blue-dog",
+  "version": "0.33",
+  "displayName": {
+    "default": "Blue-dog",
+    "zh_CN": "Blue-dog"
+  },
+  "description": {
+    "default": "Blue-dog主题",
+    "zh_CN": "Blue-dog主题"
+  },
+  "modes": [
+    "light"
+	
+  ]
+}

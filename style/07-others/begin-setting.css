@@ -1,0 +1,64 @@
+/* ————————————————————设置滚动条样式——————————————————__ */
+::-webkit-scrollbar-thumb {
+    /* background-color: var(--b3-scroll-color); */
+    border-radius: 1px;
+}
+
+/* ————————————————————去掉软件的边框线———————————————————— */
+body.body--win32 {
+    border: none !important;
+}
+
+/* 文档树滚动条，鼠标悬浮时才显示 */
+.fn__flex-1::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    transition: background-color 1s ease;
+}
+
+.fn__flex-1:hover::-webkit-scrollbar-thumb {
+    background-color: var(--b3-scroll-color);
+}
+
+
+
+
+/* 块标悬浮设置，来自于Notion主题 */
+.protyle-gutters button svg {
+    padding: 0 5px;
+    border-radius: 3px;
+    height: 24px;
+}
+
+.protyle-gutters button[data-type="fold"] svg {
+    padding: 0px 6px;
+}
+
+.protyle-gutters button svg:hover {
+    background-color: var(--b3-theme-tm-gray);
+}
+
+.protyle-gutters button {
+    padding: 4px 0px;
+}
+
+.protyle-gutters {
+    transition: all 200ms ease-out;
+}
+
+
+/* 折叠的块标改变颜色，来自于Concise Light主题 */
+.protyle-gutters button[data-type="fold"] svg[style="width:10px"] {
+    color: var(--b3-theme-secondary);
+}
+
+
+/* 去除滚动条，默认主题bug，来自于Sofill主题代码 */
+.fn__flex-column {
+    overflow: hidden;
+}
+
+/* 文本两端对齐，好看，列表转表格时会产生bug */
+.b3-typography>.p,
+.protyle-wysiwyg>.p {
+    text-align: justify;
+}

@@ -1,0 +1,23 @@
+/* 鼠标悬浮时设置为透明，否则会有灰色圆形出现 */
+.protyle-wysiwyg [data-node-id].li>.protyle-action--task:hover:after {
+    background-color: transparent !important;
+    opacity: 0 !important;
+}
+
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.protyle-action--task::after {
+    border-radius: 0px;
+    background-color: #8080804d;
+}
+
+/* 设置待办事项样式 */
+
+.protyle-task--done>.p {
+    text-decoration: line-through;
+    text-decoration-color: #55555a3f;
+    color: #55555a44;
+}
+
+/* 加深列表辅助线 */
+.protyle-wysiwyg [data-node-id].li>[data-node-id]:before {
+    border-left: 1px solid #e9e9e9;
+}

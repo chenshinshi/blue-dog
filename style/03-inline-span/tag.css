@@ -1,0 +1,11 @@
+.protyle-wysiwyg span[data-type="tag"] {
+    border-bottom: 0px solid transparent !important;
+    background-color: #deecff;
+    border-radius: 50px;
+    padding: 2px 5px;
+    margin-right: 3px;
+}
+
+.protyle-wysiwyg span[data-type="tag"]::before {
+    content: "⭗";
+}

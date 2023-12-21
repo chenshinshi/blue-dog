@@ -1,0 +1,34 @@
+/* 设置dialog圆角大小 */
+.b3-dialog__container .b3-text-field.fn__flex-1 {
+    border-radius: 0px;
+}
+
+/* ------------------------------------------设置弹窗样式------------------------------------------ */
+.b3-dialog__container {
+    background-color: var(--b3-theme-background);
+    border-radius: 12px 12px 0px 0px;
+}
+
+/* 设置关闭按钮样式 */
+.b3-dialog__container button.b3-button.b3-button--cancel {
+    background-color: var(--b3-theme-background);
+    outline: 1px solid var(--b3-dialog-button);
+    color: var(--b3-theme-on-background);
+}
+
+.b3-dialog__container button.b3-button.b3-button--cancel:hover {
+    background-color: var(--b3-tab-bar-hover-background);
+}
+
+/* 设置确认按钮样式 */
+.b3-dialog__container button#confirmDialogConfirmBtn {
+    background-image: var(--b3-tab-bar-focus-background);
+    color: var(--b3-white-black);
+}
+
+/* ------------------------------------------设置弹窗样式 END------------------------------------------ */
+
+/* 修改更多字体面板背景样式 */
+.protyle-util {
+    background-color: var(--b3-theme-background);
+}

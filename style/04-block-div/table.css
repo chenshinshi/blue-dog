@@ -1,0 +1,61 @@
+/* -------------------------------表格start------------------------------------- */
+/* 表格100%宽度 */
+/* .protyle-wysiwyg table,
+.b3-typography table {
+    display: table;
+    width: 100%;
+} */
+
+
+.table {
+    width: fit-content !important;
+}
+
+/* 表格表行 */
+/* .b3-typography table tr,
+.protyle-wysiwyg table tr {
+    background-color: var(--b3-table-tr-background);
+} */
+
+
+.b3-typography table tr td,
+.b3-typography table tr th,
+.protyle-wysiwyg table tr td,
+.protyle-wysiwyg table tr th {
+    background-color: var(--b3-table-tr-background);
+}
+
+/* 设置表头背景色 */
+.protyle-wysiwyg table thead,
+.b3-typography table thead {
+    background-color: var(--b3-table-thead-background) !important;
+}
+
+/*设置表格表头样式，颜色，背景，加粗，居中对齐*/
+table th {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 设置表格内部边框 */
+th, td {
+    min-width: 1em;
+    border: 0.05em solid var(--b3-table-border-color) !important;
+    border-collapse: collapse;
+    color: inherit;
+}
+
+
+/* -------------------------------表格end------------------------------------- */
+
+
+
+/* 将表格中图片统一宽度 */
+.table img {
+    width: 20em;
+}
+
+/* 限制单元格最大宽度，超出自动换行 */
+th, td {
+    max-width: 50em !important;
+}
